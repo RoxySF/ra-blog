@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+<h1>Blog Posts</h1>
 
 <table class="table table-hover">
   <thead>
@@ -19,7 +19,7 @@
         <td><%= post.body %></td>
         <td><%= User.find(post.user_id).email if post.user_id %></td>
         <td><%= link_to 'Show', post, :class => 'btn btn-default' %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-default' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn-default' %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></td>
       </tr>
     <% end %>
